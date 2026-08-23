@@ -57,13 +57,13 @@ one's own research code.
 
 More formally, this post documents the testing discipline at
 the Project Compendium tier of the Workflow Construct
-described in [post 52](/posts/52-workflow-construct/). Post 52
+described in [A Workflow Construct for the Modern Data Scientist](../wf-construct-overview-anchor/). Post 52
 positions the compendium tier (zzcollab and its
 predecessors) as the project-level reproducibility unit; tests
 are the discipline that closes that unit's loop, in the sense
 that an analysis is only as reproducible as its tests
 exercise. This post is the testing companion to
-[post 29](/posts/29-setupquarto/) (the compendium-tier
+[Reproducible Blog Posts with ZZCOLLAB](../zc-quarto-compendium-intro/) (the compendium-tier
 keystone).
 
 ## Motivations
@@ -834,7 +834,7 @@ before they reach collaborators.
 **Related posts:**
 
 - [Blog Post Template](
-  ../39-templatepost/):
+  ../zc-blog-post-template/):
   The ZZCOLLAB template includes a full test suite
 
 **Key resources:**
