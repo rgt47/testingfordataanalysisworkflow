@@ -16,9 +16,8 @@ cluster: r-packages
 cluster-order: 3
 ---
 
-![A research workstation with test results
-displayed alongside data analysis
-output](media/images/hero.png){.img-fluid
+![A stack of graduated wire-mesh sieves, coarse mesh on top and finer mesh below, beside a pile of gravel: data passing through successive layers of validation, coarse checks first, finer checks
+last](media/images/hero.jpg){.img-fluid
 width=80% fig-align="center"}
 
 *Testing data analysis workflows transforms
@@ -286,10 +285,11 @@ test_that("bootstrap is reproducible", {
 })
 ```
 
-![A diagram showing the testing pyramid with unit
-tests at the base, integration tests in the
-middle, and reproducibility tests at the
-top](media/images/ambiance2.png){.img-fluid height=3.5in}
+![A stack of three graduated ceramic bowls nested by
+size with a wooden spoon resting across the largest:
+layered levels of testing, broad and shallow at the
+base, narrow and deep at the
+top](media/images/ambiance2.jpg){.img-fluid height=3.5in}
 
 *The testing pyramid for data analysis: unit tests
 form the broad base, integration tests provide
