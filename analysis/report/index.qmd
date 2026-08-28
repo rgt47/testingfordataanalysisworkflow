@@ -42,7 +42,7 @@ trusting that my code was correct because it ran
 without errors. These approaches failed to scale.
 When a collaborator's data arrived with unexpected
 column types, my pipeline broke silently. When a
-package update changed default behaviour, my results
+package update changed default behavior, my results
 shifted without warning.
 
 This post presents the testing taxonomy developed
@@ -94,7 +94,7 @@ keystone).
 2. Implement unit tests, data validation tests,
    integration tests, and reproducibility tests
    using testthat and assertr.
-3. Organise test files following R package
+3. Organize test files following R package
    conventions and demonstrate how to run them
    from the terminal.
 4. Set up continuous integration with GitHub
@@ -106,7 +106,7 @@ spotted or better approaches are always welcome.
 ![](media/images/testthat-logo.png){.img-fluid width=30% fig-align="center"}
 
 *Systematic testing adapts software engineering
-rigour to the specific needs of data analysis.*
+rigor to the specific needs of data analysis.*
 
 # Prerequisites and Setup
 
@@ -159,7 +159,7 @@ Just as a manufacturing process has inspection
 points that verify each component meets
 specifications, a data analysis pipeline has tests
 that verify each stage (data loading, cleaning,
-modelling, and reporting) produces expected results.
+modeling, and reporting) produces expected results.
 
 Testing serves two primary goals. Computational reproducibility means another
 researcher can use the same code and data to obtain
@@ -177,7 +177,7 @@ necessary for trustworthy research.
 |-----------|---------------|-------------|
 | Unit | Individual functions | Helper functions |
 | Data validation | Data quality | After loading |
-| Integration | Full pipeline | Before finalising |
+| Integration | Full pipeline | Before finalizing |
 | Reproducibility | Same results | Random processes |
 
 ## Unit Tests
@@ -331,7 +331,7 @@ expect_warning(risky_function())
 expect_no_error(safe_function())
 ```
 
-## Test File Organisation
+## Test File Organization
 
 ```
 tests/
@@ -682,7 +682,7 @@ test_that("model is reproducible", {
    explicitly in each test that uses randomness.
 4. **Package updates change defaults silently.**
    A dplyr update that changes `summarise()`
-   behaviour will not cause a test failure unless
+   behavior will not cause a test failure unless
    the specific output values are tested, not just
    the output structure.
 5. **Over-testing implementation details creates
@@ -698,7 +698,7 @@ diagram](media/images/ambiance3.png){.img-fluid height=3.5in}
 *Automated testing provides continuous assurance
 that an analysis pipeline produces correct results.*
 
-## Lessons Learnt
+## Lessons Learned
 
 ### Conceptual Understanding
 
@@ -726,7 +726,7 @@ that an analysis pipeline produces correct results.*
   `assert`, `insist`) fits naturally into tidyverse
   workflows without requiring separate test files.
 - Helper functions in `helper-*.R` files reduce
-  test code duplication and centralise test data
+  test code duplication and centralize test data
   generation.
 - GitHub Actions with `r-lib/actions/setup-r@v2`
   provides automated testing with minimal
