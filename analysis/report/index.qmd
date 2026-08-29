@@ -6,7 +6,7 @@ categories: [r, testing, reproducibility]
 description: "I did not really know how to systematically test a data analysis pipeline until I applied software engineering practices from testthat and assertr to my own research workflow."
 image: "media/images/hero.png"
 document-type: "blog"
-draft: true
+draft: false
 execute:
   echo: true
   eval: false
